@@ -1,0 +1,20 @@
+1) What you do day to day activity in your project?
+2) What is GitHub Action and where workflow define? and what rules you need to be ensure?
+3) How is this runners setup?
+4) What is PAT(Personal Access Token)?
+5) Have you heard SSH Key into github and setup related to authentication?
+6) We have particular repos repo1,repo2,repo 3 all belong to different application what rules you need to follow so application 10 required access to repo3 and you need to provide read only access so user cannot check-in how can you give access to?
+7) To usage perspective of github who can manage that
+8) What is PR in github?
+9) Do you know git fetch command what eactly it is?
+10) What is diffference between git fetch and git pull?
+11) How to reduce maximum file size can be uploaded in github?
+12) Have you worked on jenkins?
+13) Have you used terraform scripts?
+14) Other CI/CD what other tools you worked upon?
+15) What exactly you worked on sonarqube?
+16) Do you have any idea on docker?
+17) Database on MySQL and basic on DB commands?
+
+Feedback
+Focus on Jenkins CI/CD pipelines
