@@ -1,0 +1,39 @@
+1) How to setup CI/CD piepline for flutter app?
+2) Can you explain how you manage state in terraform and best practices for state management in team environment?
+3) Can you define complex deployment stucture, how automated using terraform and what challages you faced to overcome them?
+4) What does cloud native mean to you?
+5) What if any problems with persistent storage in kubernetes?
+6) If you want to automate one part of Build pipeline what part would you start with?
+7) How to find and fix security and vunlenrabilities?
+8) When it comes to devops and devsecops? what is the difference?
+9) What is difference between agile software development and in devops/devsecops development?
+10) How do you ensure security vulenrabilities dedicated by tools like sonarqube,torch or checkmarks in production deployment?
+11) How would implement policy for vulnerability scanning and remdiation in devsecops pipelines?
+12) Have you worked on ansible,jenkins and terraform?
+13) Can you describe your experience with CI/CD pipelines or any data science engineering projects? How will you ensure CI/CD will maintaining integrity?
+14) How would you manage and automate dependency  in your CI/CD pipeline? Data pipeline run consistently in different env? For ex dev/staging and prod
+15) Can you define steps how jenkins deploy an application in CI/CD?
+16) Can you explain steps or process CI/CD with ansible?
+17) What problem addressed by CI/CD and how is it implemented in your project?
+18) What is ansible role in devops and how can be used/adapted?
+19) Your CI/CD pipeline is designed to deploy new version of your application into kubernetes cluster but deployment are failing  intermittently so how torubleshoot and resolve issues?
+20) Have you worked on FTP/SFTP?
+21) What about artifacts repository?
+22) What about cloud platform in which cloud you are comfortableand what services you worked on?
+23) Do you have any servers experience  like apache,nginx,tomcat?
+24) What code review tools you worked on?
+24) What programming languages comfortable?
+25) Do you have experience with sql or postgress or oracle?
+26) Configuration management worked on?
+27) Any experence windows and linux administration concepts?
+28) Any mobile development experience or any particular tool?
+
+
+Feedback:-
+You need to have knowledge on asible,terraform IAC,Cloud Formation other security tools like sonar qube,snyk,checkmarks,sonar type firewall,xray
+And should also little experience in containerization tools like EKS,AKS
+You should be much stonger in programming languages on or two(Like Java)
+Be good in Windows Admin and linux admin and network
+Any one or tow cloud platform need to be strong like AWS or Azure
+SQL and NoSQL DB
+
