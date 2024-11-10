@@ -1,0 +1,11 @@
+1) What is NAT Gateway and NAT Instance?
+2) Define types of VPC Ip and create subnet ID subnet v1,v2,v3,v4
+3) What is Internet Gateway?
+4) What is elastic IP and static IP?
+5) What is difference between IAM Role and IAM Policy?
+6) What needs to define in policy json and mandatory field in policy like Effect,Action,Resource what type of value define for these field?
+7) What is Cidr_Address?
+8) How you attach policy to used?
+9) What is Amazon RDS?
+10) Define Elastic Transcoder
+11) What is Power User Access?
