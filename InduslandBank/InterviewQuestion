@@ -1,0 +1,10 @@
+1) Tell me about yourself and what tech stack you are taking care? What you day to day task and how you toubleshoot issues?
+2) Are you using kubernetes paltform?
+3) Are you using Helm chart?
+4) What are major components of kubernetes and how it designed and what is workflow?
+5) What is the difference between deployment and state file set?
+6) What is taint tolerance in kubernetes?
+7) What are the best practices you need to follow to secure kubernetes environment?
+
+Feedback:
+You need to look more in kubernetes
