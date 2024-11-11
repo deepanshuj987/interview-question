@@ -1,0 +1,23 @@
+1) Just brief me about yourself
+2) Can you explain componenets of kubernetes?
+3) We have created one pod how it is settle down in cluster or  worker node(Internal Workflow)-->Controller will manage then scheduler will assign it to and one it will store in etcd
+4) What is kubectl?
+5) What is kube proxy?
+6) What is ingress in kubernetes?
+7) You worked on CI/CD pipelines? Are you using Jenkins?
+8) In CI can you give one scenario how to do it?
+9) What is major difference in AKS and EKS?
+10) What is azure devops and its components having?
+11) What kind of artefacts created in Azure Devops perspective?
+12) Do you know how to create artefacts?
+13) Why we need to use azure boards what is adavntage over other boards?
+14) Have you worked on git workflows?
+15) Have you worked on AWS JFrog Artifacory and what you did?
+16) What is terraform and why we use it?
+17) In Terraform i already have two resources which deployed manually not using Terraform how will you modify resource using terraform?
+18) How will you take backup of terraform state file?
+19) Which monitoring tool you are using for your environment? How will you moniterate using tools?
+20) Can you write HCL language to create two resource groups in Azure?
+21) Are you using backup related tools like backing up pods in kubernetes?
+22) If we downloaded one repo from git to our local and edit one file in local and how that edited file be added into remote repository? And what all are in stages to push again to github internally?
+23) What are stages in git? like working directory, staging area and git directory
