@@ -1,0 +1,13 @@
+1) Can you please give brief introduction of yourself like daily or day to day activities in current project?
+2) Do you have experience with jenkins?
+3) Have you written CICD piepline or jenkins files?
+4) What all kind of jobs you worked in jenkins?
+5) Have you worked with Multi branch pipeline?
+6) Are you able to run multiple stages at same time?
+7) Suppose i am running set of commands in shell i want to know the status code of last command ran or not How can i fetch that?
+8) Can you write a shell script which prints even numbers?
+9) What work you have done in docker?
+10) In dockerfile i have kept image on private repository how will i ran that docker file?
+11) I want to access some variable define in my dockerfile in container where should i define that variable in ARGUMENTS of Dockerfile?
+12) Can you tell some strategy with which we can build light weight image in docker?
+13) Have heard on multi stage docker file?
