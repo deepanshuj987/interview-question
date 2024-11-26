@@ -1,0 +1,17 @@
+1) Any reason you haven't use AWS code pipeline?
+2) How do you manage any secrets and data in your terraform scripts?
+3) How many stages you have in GitAction? Like if some changes in Terraform scripts how you deploy those changes in AWS
+4) How to deploy applicaton in AWS EC2 Instances?
+5) What is your target machines in AWS?
+6) How did you reduced deployment time and how you fixed and what was the issue?
+7) Have you worked on Ansible?
+8) Any other deployment tools you used like jenkins and azure pipelines?
+9) How did you manage state file in terraform?
+10) Can you explain about kubernetes how you use in projects?
+11) Tell me about labels and selectors in kubernetes
+12) Do you have montioring and logging solution in your project?
+13) How do you get notified when AWS source is down?
+14) Any powersell and linux sripting you have done? like any automation you have done?
+
+Feedback
+Real time knowledge is not there
