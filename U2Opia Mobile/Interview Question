@@ -1,0 +1,17 @@
+1) Tell me about your education and whole career journey in short brief
+2) I have one LIVE EC2 Instance and i lost PEM key of that instance is it possible to recover exisitng PEM Key. How to recreate it?
+3) I have one EC2 Instance running with 30GB Disk Space now i want to increase disk space from 30GB to 60GB Is it possible to increase root partion?
+4) What is Load Balancer? How many types of Load Balancer?
+5) What is differnece between Application Load Balancer and Network Load Balancer?
+6) What is the protcol or Listeneres supported by Application Load Balancer?
+7) I have one HTTPS Listeners in my ALB and I need to provide some SSL certificate.How do you provide SSL Certificate to listener?
+8) Write Basic Syntax of Terraform Script and need to provision EC2 Instance?
+9) While creating EC2 instance you have to provide several details like VPC,Subnet in AWS_Instance Resource block with already exisitng VPC,Subnet
+10) Can we provide interactive kind of screen when run the script and first it need to fetch all VPC from AWS and provide some option to select VPC which i want? Like I have 3 VPC in AWS account i want to launch EC2 Instance in VPC1,VPC2,VPC3 whenever i run it should ask me which VPC i want to launch Instance
+11) Have you worked on EKS and ECS?
+12) Do you working knowledge on Docker File? Ok you need to create Dockerfile to host server nginx
+13) How to run Docker Image on eks How will you do this? Using Manifest you have to do it and How you can do it?
+14) Have you worked on Route53? What is CNAME?
+
+Feedback
+Terraform is good you need to learn AWS,Docker
