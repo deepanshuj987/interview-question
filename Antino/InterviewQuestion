@@ -1,21 +1,39 @@
 1) Can you please give brief introduction about yourself like The Project,Toolstack and Delivery(Roles and Resposibility)?
 2) How you managing Terraform Code for all env from lower to higher environment how you are change variable tf files for environment related stuff to run as per environment? Let's initially we dev env and in variable.tf while env value is dev for higher env are you cahnging manually or how you are working for higher env?
 Why we are not using workspace?
-3) What about terraform backend? What if you misplaced your terraform tfstate file in bucket or bucket deleted? what is the most preffered solution? Use terraform import command
-4) Can we have multiple buckets for single tfstate file? The Terraform state backend configuration is designed to point to a single S3 bucket to store the state file
+    Ans: We can use terraform workspace for different env
+3) What about terraform backend? What if you misplaced your terraform tfstate file in bucket or bucket deleted? what is the most preffered solution? 
+   Ans:- Use terraform import command or enable versioning in AWS S3 Bucket
+          To enable versioning go to the "properties" section-->Go to "Versioning"-->click "Enable versioning"
+4) Can we have multiple buckets for single tfstate file? 
+   Ans:- The Terraform state backend configuration is designed to point to a single S3 bucket to store the state file
 5) How about multi provider terraform file?
 7) Let's suppose we are doing setup infrastructure first time and provider.tf file we provided bucket name to store tfstate file but bucket is not exist? Like all code in you local desktop nothing is in AWS
-8) Which CI/CD tool you are working for kubernetes deployment?
+   Ans:- First provision s3 using aws_s3_bucket resource using tf file and then add provider.tf file with backend and do initialisation for the same
+8) Which CI/CD tool you are working for Kubernetes deployment?
 9) You have code repository for Backend Java,NodeJS I wannt this to be deploy in kubernetes environment initial security check-in done and you can communicate EKS using kubectl I want to deploy API in Kubernetes Env in particular custom namespace which should be secure and you need to expose it externally give some REST Point give manual step
 How to deploy Application code of Github to Kubernetes cluster manually?
+    Ans:- Use the following command "kubectl apply -f java-deployment.yaml -n your-app-namespace"
+                                "kubectl apply -f java-service.yaml -n your-app-namespace"
 How to deploy public image into EKS using kubectl and Expose Externally?
 10) How you are doing deploying Application code using Jenkins? 
 11) How you are deploying Application Code in Container through pipeline using Kubernetes?
 12) Do you know what is ingress controller in Kubernetes?
-13) What is the differnece between ingress controller and Load Balancer? If you create ingress controller it will automatically create Load Balancer
-Ingress is for Host Base Routing and Path Base Routing if we have multiple microservices and all microservices can't be exposed on Load Balancer 
-14) Let's say you have EC2 Instance in private subnet how you can acces it using CLIt?  Use EC2 Instance Connect
-15) What is differnce between security group and NACL?Restrict Subnet Level using NACL
+    Ans:- To allow external traffic for our services using YAML Script definition as kind is ingress will managed by F5 Team
+13) What is the differnece between ingress controller and Load Balancer? 
+    Ans:- If you create an ingress controller it will automatically create Load Balancer
+          Ingress is for Host Base Routing and Path Base Routing if we have multiple microservices and all microservices can't be exposed on Load Balancer 
+14) Let's say you have EC2 Instance in private subnet how you can acces it using CLIt?  
+    Ans:- Use EC2 Instance Connect or Jump Server which is in Public subnet first connect EC2 instance of public subnet and then connect EC2 Instance of private subnet
+15) What is differnce between security group and NACL?
+    Ans:- Restrict Subnet Level using NACL
+          A) Scope
+          Security groups control traffic at the instance level, while NACLs control traffic at the subnet level. 
+          B) Rules
+          Security groups only have allow rules, while NACLs can have both allow and deny rules. 
+          C) Statefulness  
+          Security groups are stateful, meaning changes to incoming rules are automatically applied to outgoing rules. 
+          NACLs are stateless, meaning changes to incoming rules are not applied to outgoing rules. 
 16) Why we call Serivce Route53 not 52 or 51? Because DNS host on port 53
 
 Feedback:
