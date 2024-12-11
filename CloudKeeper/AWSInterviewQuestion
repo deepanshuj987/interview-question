@@ -1,11 +1,33 @@
 1) What is NAT Gateway and NAT Instance?
+   Ans:- a NAT Gateway is a fully managed service 
+         by the cloud provider (like AWS), while a NAT Instance is a regular EC2 instance configured to perform NAT functions, 
+         requiring manual management by the use
+         Both NAT Gateways and NAT Instances use Network Address Translation (NAT) to map private IP addresses from your private
+         subnet to a single public IP address, allowing outbound internet access while preventing direct inbound connections to private instances
 2) Define types of VPC Ip and create subnet ID subnet v1,v2,v3,v4
+   Ans:- 1)Elastic IP
+         2)Public IP
+         3)Private IP
 3) What is Internet Gateway?
+   Ans:- a component that allows communication between a Virtual Private Cloud (VPC) and the internet
 4) What is elastic IP and static IP?
+   Ans:- An "Elastic IP" (EIP) is a static public IP address that you can associate with your EC2 instances, meaning it remains the same 
+   even if you stop and restart the instance, while a "static IP" generally refers to any IP address that is manually assigned and doesn't change
 5) What is difference between IAM Role and IAM Policy?
+   Ans:- An IAM Role is essentially an identity within AWS that defines who can access resources, while an IAM Policy defines the specific permissions 
+         that identity has on those resources; meaning, a role is like a user account, and a policy is like a set of rules dictating what actions that 
+         user can perform on AWS services.
 6) What needs to define in policy json and mandatory field in policy like Effect,Action,Resource what type of value define for these field?
+   Ans:- "Effect" always needing to be set to either "Allow" or "Deny," "Action" specifying the operation being performed, and "Resource" identifying 
+          the target resource affected by the policy
 7) What is Cidr_Address?
+   Ans:- In AWS, a CIDR address stands for "Classless Inter-Domain Routing" address, which is a method of representing IP address ranges using a compact notation,
+         allowing for efficient allocation of IP addresses within a network, like a VPC 
 8) How you attach policy to used?
 9) What is Amazon RDS?
+   A web service that helps users set up, operate, and scale relational databases in the cloud
 10) Define Elastic Transcoder
+    Ans:- a cloud-based service that automatically transcodes media files into formats that can be played on various devices
 11) What is Power User Access?
+    Ans:- a set of permissions assigned to a user through a managed policy, allowing them to perform most actions within AWS services 
+          but restricting their ability to manage other users or modify critical account settings
