@@ -1,14 +1,36 @@
 1) Any reason you haven't use AWS code pipeline?
-2) How do you manage any secrets and data in your terraform scripts?
+2) How do you manage any secrets and data in your terraform scripts? 
+    Ans:- AWS Secret Manager, HashiCorp KMAAS Vault
+          Ex:-
+            data "kmaas_secret" "my_secret" {
+
+                secret_id = "your_secret_path_in_kmaas"
+
+            }
 3) How many stages you have in GitAction? Like if some changes in Terraform scripts how you deploy those changes in AWS
+   Ans:- Working Directory,Staging Directory, Local Repo,Remote Repo(GitHub)
 4) How to deploy applicaton in AWS EC2 Instances?
-5) What is your target machines in AWS?
-6) How did you reduced deployment time and how you fixed and what was the issue?
+    Ans:- Manually
+          1. Launch an EC2 instance
+          2. Access the instance via SSH
+          3. Upload your application files 
+          4. Install necessary dependencies
+          5. Configure and start your application
+          6. Test its functionality
+    
+5) What is your target machines in AWS? Ubuntu
+6) How did you reduce deployment time and how you fixed and what was the issue?
+   Ans:- 1) Image Optimization: Use Multi-Stage Build in final Image and Use Caching
+         2) Deployment Strategy: Use Rolling Updates
+         3) Resource Management: Limit CPU Utilization
 7) Have you worked on Ansible?
 8) Any other deployment tools you used like jenkins and azure pipelines?
 9) How did you manage state file in terraform?
+   Ans:- To store state file we use AWS S3 Bucket to manage the same
 10) Can you explain about kubernetes how you use in projects?
 11) Tell me about labels and selectors in kubernetes
+   Ans:- "labels" are key-value pairs attached to objects like pods, 
+         allowing you to add metadata and categorize them, while "selectors" are mechanisms to filter and group objects based on their labels
 12) Do you have montioring and logging solution in your project?
 13) How do you get notified when AWS source is down?
 14) Any powersell and linux sripting you have done? like any automation you have done?
