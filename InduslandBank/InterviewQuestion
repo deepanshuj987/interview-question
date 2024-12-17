@@ -2,9 +2,56 @@
 2) Are you using kubernetes paltform?
 3) Are you using Helm chart?
 4) What are major components of kubernetes and how it designed and what is workflow?
-5) What is the difference between deployment and state file set?
+   Ans:- Key components:
+              A)Control Plane(also called "Master"):
+                  1)kube-apiserver: The primary entry point for interacting with the cluster, handling all API requests. 
+                  2)etcd: A distributed key-value store that stores the cluster state and configuration data. 
+                  3)kube-controller-manager: Responsible for managing the lifecycle of various cluster objects like deployments and pods. 
+                  4)kube-scheduler: Decides which node to schedule a pod on based on resource availability and constraints. 
+              B)Worker Nodes (also called "nodes")
+                  1)kubelet: An agent running on each node, communicating with the control plane to manage pods and containers. 
+                  2)Container Runtime Engine (CRI): Executes containers on the node (e.g., Docker, CRI-O). 
+                  3)kube-proxy: Network proxy that enables communication between pods and services within the cluster. 
+              C)Workflow overview:
+                  1. User Action:A user submits a request (e.g., deploying a pod) through the Kubernetes API using tools like kubectl. 
+                  2. API Server Validation:The kube-apiserver validates the request and stores it in etcd. 
+                  3. Scheduling:The kube-scheduler selects the most suitable node to run the pod based on resource availability and constraints. 
+                  4. Pod Creation:The kubelet on the chosen node receives the pod specification and creates the container(s) within the pod. 
+                  5. Container Management:The kubelet monitors the container lifecycle, ensuring it is running as expected and restarting it if necessary. 
+                  6. Self-Healing:If a node fails, the control plane automatically reschedules the pods running on that node to healthy nodes. 
+5) What is the difference between deployment and statefulset in Kubernetes?
+   Ans:- A deployment is used for stateless applications, while a statefulset is used for stateful applications: 
+          Deployment(Used for Frontend like WebService)
+                Used for stateless applications, such as website and web app frontends. Deployments are ideal for applications that need to be 
+                scaled quickly and updated frequently. They manage a set of identical pods, and allow you to: 
+                1)Ensure the correct number of replicas are running at all times 
+                2)Provide declarative updates for pods and replica sets 
+                3)Scale easily by increasing the number of replicas 
+          Statefulset(Used for backend like Database)
+                Used for stateful applications, such as databases. Statefulsets are essential for applications that need persistent storage and stable identities. 
+                They manage a set of identical stateful pods, and allow you to: 
+                1)Maintain a sticky identity for each pod 
+                2)Create uniquely named pods, according to a specified pattern 
+                3)Ensure stable pod replication and data persistence 
+                4)Use storage volumes to provide persistence for your workload 
+        Other differences between deployments and statefulsets include: 
+        Pods
+        In a statefulset, each pod has a persistent identifier that it maintains across any rescheduling. In a deployment, pods are fully interchangeable. 
+        Persistent volume claim (PVC)
+        In a statefulset, each pod has its own PVC. In a deployment, the PVC is shared across the pods. 
 6) What is taint tolerance in kubernetes?
+   Ans:- The ability of a pod to be scheduled on a node that has a specific "taint" applied to it
+          A)Taints are applied to nodes:
+            A taint is a label placed on a node that indicates it should not accept pods unless they have a matching toleration.
+          B)Tolerations are applied to pods:
+            A toleration is a setting within a pod definition that specifies which taints it can tolerate, allowing it to be scheduled on nodes with those taints. 
+          Example use case:
+          Dedicated GPU nodes: If you have a node with specialized hardware like a high-performance GPU, you can apply a taint to that node marked as "gpu=true". 
+          Only pods with a toleration for "gpu=true" can be scheduled on that node, ensuring that only GPU-intensive workloads are placed there. 
 7) What are the best practices you need to follow to secure kubernetes environment?
+   Ans:- A) Secure application code-->Using Sonar Qube
+         B) Secure container images--> Using JFrog
+         C) Secure etcd--> Protect etcd with TLS, Firewall, and Encryption
 
 Feedback:
 You need to look more in kubernetes
